@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>regwindow</class>
+ <widget class="QDialog" name="regwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>310</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>310</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>310</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	backgrond-color: #2C3E50;
+}</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>288</width>
+     <height>194</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="4" column="0">
+     <widget class="QPushButton" name="RegistrationPushButtonReg">
+      <property name="styleSheet">
+       <string notr="true">QPushButton#RegistrationPushButtonReg{
+	 background-color: #3498DB;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+QPushButton#RegistrationPushButtonReg:hover {
+    background-color: #2980B9;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>sign up</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="putConfirm">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+   background-color: transparent; 
+    border: none;
+    border-bottom: 2px solid #BDC3C7;
+    padding: 5px;
+    color: #ECF0F1; 
+}
+
+QLineEdit::placeholder {
+    color: #95A5A6;  
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid #3498DB;  
+}
+
+QLineEdit {
+    transition: border-bottom 0.3s ease;  
+}
+</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>confirm</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="putNameReg">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+   background-color: transparent; 
+    border: none;
+    border-bottom: 2px solid #BDC3C7;
+    padding: 5px;
+    color: #ECF0F1; 
+}
+
+QLineEdit::placeholder {
+    color: #95A5A6;  
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid #3498DB;  
+}
+
+QLineEdit {
+    transition: border-bottom 0.3s ease;  
+}
+</string>
+      </property>
+      <property name="placeholderText">
+       <string>name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="putPasswordReg">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+   background-color: transparent; 
+    border: none;
+    border-bottom: 2px solid #BDC3C7;
+    padding: 5px;
+    color: #ECF0F1; 
+}
+
+QLineEdit::placeholder {
+    color: #95A5A6;  
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid #3498DB;  
+}
+
+QLineEdit {
+    transition: border-bottom 0.3s ease;  
+}
+</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::EchoMode::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="RegistrationLabel">
+      <property name="styleSheet">
+       <string notr="true">QLabel#RegistrationLabel {
+	font-size: 24px;
+	color: #ECF0F1;
+	font-weight: bold;
+	margin-bottom: 20px;
+}</string>
+      </property>
+      <property name="text">
+       <string>       create account</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

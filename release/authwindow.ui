@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>authwindow</class>
+ <widget class="QDialog" name="authwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>320</width>
+    <height>220</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	backgrond-color: #2C3E50;
+}</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>301</width>
+     <height>196</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="GreetingLabel">
+      <property name="styleSheet">
+       <string notr="true">QLabel#GreetingLabel {
+align: center;	
+font-size: 24px;
+	color: #ECF0F1;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>               sign in</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLineEdit" name="putName">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+   background-color: transparent; 
+    border: none;
+    border-bottom: 2px solid #BDC3C7;
+    padding: 5px;
+    color: #ECF0F1; 
+}
+
+QLineEdit::placeholder {
+    color: #95A5A6;  
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid #3498DB;  
+}
+
+QLineEdit {
+    transition: border-bottom 0.3s ease;  
+}
+</string>
+        </property>
+        <property name="placeholderText">
+         <string>name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="putPassword">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+   background-color: transparent; 
+    border: none;
+    border-bottom: 2px solid #BDC3C7;
+    padding: 5px;
+    color: #ECF0F1; 
+}
+
+QLineEdit::placeholder {
+    color: #95A5A6;  
+}
+
+QLineEdit:focus {
+    border-bottom: 2px solid #3498DB;  
+}
+
+QLineEdit {
+    transition: border-bottom 0.3s ease;  
+}
+</string>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::EchoMode::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>password</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="loginPushButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton#loginPushButton {
+    background-color: #3498DB;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+QPushButton#loginPushButton:hover {
+    background-color: #2980B9;
+}</string>
+        </property>
+        <property name="text">
+         <string>log in</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="registrationPushButton">
+        <property name="styleSheet">
+         <string notr="true">QPushButton#registrationPushButton {
+    background-color: #E67E22;
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+}
+QPushButton#registrationPushButton:hover {
+    background-color: #D35400;
+}</string>
+        </property>
+        <property name="text">
+         <string>create account</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
